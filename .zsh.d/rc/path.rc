@@ -1,0 +1,25 @@
+
+PATH="${PATH}:/bin"
+PATH="${PATH}:/sbin"
+PATH="${PATH}:/usr/bin"
+PATH="${PATH}:/usr/sbin"
+PATH="${PATH}:/usr/local/bin"
+PATH="${PATH}:/usr/local/sbin"
+PATH="${PATH}:${HOME}/bin"
+#openttd
+PATH="${PATH}:/usr/games/bin"
+
+
+
+#android devel
+PATH="${PATH}:/opt/android-sdk-linux_x86/platform-tools/"
+PATH="${PATH}:/opt/android-sdk-linux_x86/tools/"
+PATH="${PATH}:/opt/eclipse"
+
+
+#blackfin crosscompilers
+PATH="${PATH}:${HOME}/code/blackfin/opt/uClinux/bfin-elf/bin"
+PATH="${PATH}:${HOME}/code/blackfin/opt/uClinux/bfin-linux-uclibc/bin"
+PATH="${PATH}:${HOME}/code/blackfin/opt/uClinux/bfin-uclinux/bin"
+
+export PATH
