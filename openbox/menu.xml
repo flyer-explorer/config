@@ -2,515 +2,68 @@
 <openbox_menu>
 	<menu id="root-menu" label="OpenBox 3">
 	<item label="Terminal"> <action name="Execute"> <execute> /usr/bin/terminal </execute> </action> </item>
-	<menu id="923" label = "Common">
-	    <item label="Terminal"> <action name="Execute"> <execute> /usr/bin/terminal </execute> </action> </item>
+	<menu id="922" label = "Network">
 	    <item label="Firefox"> <action name="Execute"> <execute> /usr/bin/firefox </execute> </action> </item>
-	    <item label="Thunar"> <action name="Execute"> <execute> /usr/bin/thunar </execute> </action> </item>
-	    <item label="jEdit"> <action name="Execute"> <execute> /usr/bin/jedit </execute> </action> </item>
-	    <item label="Decibel Audio Player"> <action name="Execute"> <execute> /usr/bin/decibel-audio-player </execute> </action> </item>
-	    <item label="kmymoney"> <action name="Execute"> <execute> /usr/bin/kmymoney </execute> </action> </item>
-	    <item label="geeqie"> <action name="Execute"> <execute> /usr/bin/geeqie </execute> </action> </item>
-	    <item label="Revalation"> <action name="Execute"> <execute> /usr/bin/revelation </execute> </action> </item>
+	    <item label="Thunderbird"> <action name="Execute"> <execute> /usr/bin/thunderbird </execute> </action> </item>
+	    <item label="Evolution"> <action name="Execute"> <execute> /usr/bin/evolution </execute> </action> </item>
+	    <item label="Zenmap"> <action name="Execute"> <execute> /usr/bin/gksudo /usr/bin/zenmap </execute> </action> </item>
+        <item label="Wireshark"> <action name="Execute"> <execute> /usr/bin/wireshark </execute> </action> </item>
+        <item label="Mumble"> <action name="Execute"> <execute> /usr/bin/mumble </execute> </action> </item>
     </menu>
-    <menu id="1" label = "Network">
-    	   <item label="Zenmap"> <action name="Execute"> <execute> /usr/bin/gksudo /usr/bin/zenmap </execute> </action> </item>
-    	   <item label="Wireshark"> <action name="Execute"> <execute> /usr/bin/wireshark </execute> </action> </item>
-    	   <item label="Mumble"> <action name="Execute"> <execute> /usr/bin/mumble </execute> </action> </item>
-    	</menu>
+    <menu id="2" label="Text Utils">
+	    <item label="jEdit"> <action name="Execute"> <execute> /usr/bin/jedit </execute> </action> </item>
+	    <item label="Assistant"> <action name="Execute"> <execute> /usr/bin/assistant </execute> </action> </item>
+	    <item label="Designer"> <action name="Execute"> <execute> /usr/bin/designer </execute> </action> </item>
+	    <item label="Zim"> <action name="Execute"> <execute> /usr/bin/zim </execute> </action> </item>
+	    <item label="Calc"> <action name="Execute"><execute>/usr/bin/libreoffice --calc</execute></action> </item>
+        <item label="Impress"> <action name="Execute"><execute>/usr/bin/libreoffice --impress</execute></action> </item>
+        <item label="Math"> <action name="Execute"><execute>/usr/bin/libreoffice --math</execute></action> </item>
+        <item label="Writer"> <action name="Execute"><execute>/usr/bin/libreoffice --writer</execute></action> </item>
+        <item label="AbiWord"> <action name="Execute"><execute>/usr/bin/abiword-2.8</execute>r</action> </item>
+        <item label="BibleTime"> <action name="Execute"><execute>/usr/bin/bibletime</execute></action> </item>
+        <item label="Gnumeric"> <action name="Execute"><execute>/usr/bin/gnumeric</execute></action> </item>
+        <item label="KMyMoney"> <action name="Execute"><execute>/usr/bin/kmymoney</execute></action> </item>
+        <item label="Revelation"> <action name="Execute"> <execute> /usr/bin/revelation </execute> </action> </item>
+    </menu>
+    <menu id="921" label = "File System">
+        <item label="pcmanfm"> <action name="Execute"> <execute> /usr/bin/pcmanfm </execute> </action> </item>
+        <item label="Thunar"> <action name="Execute"> <execute> /usr/bin/thunar </execute> </action> </item>
+	    <item label="Baobab"> <action name="Execute"> <execute> /usr/bin/baobab </execute> </action> </item>
+    </menu>
+    <menu id="920" label = "Audio">
+	    <item label="Decibel Audio Player"> <action name="Execute"> <execute> /usr/bin/decibel-audio-player </execute></action></item>
+	    <item label="Gnome Music Player Client"> <action name="Execute"><execute>/usr/bin/gmpc</execute></action> </item>
+	    <item label="Easytag"> <action name="Execute"> <execute> /usr/bin/easytag </execute> </action> </item>	    
+    </menu>
 	<menu id="42" label="Games">
 	    <item label="Minecraft"> <action name="Execute"> <execute> /home/nickp/.minecraft/minecraft.sh </execute> </action> </item>
 	    <item label="Minecraft Server"> <action name="Execute"> <execute> /home/nickp/.minecraft/minecraft-server.sh </execute> </action> </item>
 	    <item label="Openttd"> <action name="Execute"> <execute> /usr/games/bin/openttd </execute> </action> </item>
-	    <item label="mumble"> <action name="Execute"> <execute> mumble </execute> </action> </item>
-       	</menu>
-	<menu id="2" label="Development">
-	    <item label="Assistant"> <action name="Execute"> <execute> /usr/bin/assistant </execute> </action> </item>
-	    <item label="Designer"> <action name="Execute"> <execute> /usr/bin/designer </execute> </action> </item>
-	    <item label="jEdit"> <action name="Execute"> <execute> /usr/bin/jedit </execute> </action> </item>
-	    <item label="Zim"> <action name="Execute"> <execute> /usr/bin/zim </execute> </action> </item>
-       	</menu>
-        <menu id="6" label="Graphics">
-			<item label="Darktable Photo Workflow Software"> <action name="Execute">
-				<execute>darktable</execute>
-			</action> </item>
-			<item label="digiKam"> <action name="Execute">
-				<execute>digikam</execute>
-			</action> </item>
-			<item label="Document Viewer"> <action name="Execute">
-				<execute>evince</execute>
-			</action> </item>
-			<item label="Hugin Batch Processor"> <action name="Execute">
-				<execute>PTBatcherGUI</execute>
-			</action> </item>
-			<item label="Hugin Panorama Creator"> <action name="Execute">
-				<execute>hugin</execute>
-			</action> </item>
-			<item label="Geeqie"> <action name="Execute">
-				<execute>geeqie</execute>
-			</action> </item>
-			<item label="GNU Image Manipulation Program"> <action name="Execute">
-				<execute>gimp-2.6</execute>
-			</action> </item>
-			<item label="Image Viewer"> <action name="Execute">
-				<execute>eog</execute>
-			</action> </item>
-			<item label="Inkscape"> <action name="Execute">
-				<execute>inkscape</execute>
-			</action> </item>
-			<item label="Panorama"> <action name="Execute">
-				<execute>panoramagui</execute>
-			</action> </item>
-			<item label="UFRaw"> <action name="Execute">
-				<execute>ufraw</execute>
-			</action> </item>
-			<item label="XSane Scanner Tool"> <action name="Execute">
-				<execute>xsane</execute>
-			</action> </item>
-		</menu>
-		<menu id="7" label="Multimedia">
-			<item label="ALSA mixer"> <action name="Execute">
-				<execute>xterm -e alsamixer</execute>
-			</action> </item>
-			<item label="Audio CD Extractor"> <action name="Execute">
-				<execute>sound-juicer</execute>
-			</action> </item>
-			<item label="Brasero"> <action name="Execute">
-				<execute>brasero</execute>
-			</action> </item>
-			<item label="Decibel Audio Player"> <action name="Execute">
-				<execute>decibel-audio-player</execute>
-			</action> </item>
-			<item label="Dragon Player"> <action name="Execute">
-				<execute>dragon</execute>
-			</action> </item>
-			<item label="EasyTag"> <action name="Execute">
-				<execute>easytag</execute>
-			</action> </item>
-			<item label="Gnome Music Player Client"> <action name="Execute">
-				<execute>gmpc</execute>
-			</action> </item>
-			<item label="HandBrake"> <action name="Execute">
-				<execute>ghb</execute>
-			</action> </item>
-			<item label="JuK"> <action name="Execute">
-				<execute>juk</execute>
-			</action> </item>
-			<item label="K3b"> <action name="Execute">
-				<execute>k3b</execute>
-			</action> </item>
-			<item label="KMix"> <action name="Execute">
-				<execute>kmix</execute>
-			</action> </item>
-			<item label="KsCD"> <action name="Execute">
-				<execute>kscd</execute>
-			</action> </item>
-			<item label="Movie Player"> <action name="Execute">
-				<execute>totem</execute>
-			</action> </item>
-			<item label="Sound Recorder"> <action name="Execute">
-				<execute>gnome-sound-recorder</execute>
-			</action> </item>
-			<item label="Swfdec Flash Player"> <action name="Execute">
-				<execute>swfdec-player</execute>
-			</action> </item>
-			<item label="TiMidity++ MIDI sequencer"> <action name="Execute">
-				<execute>timidity</execute>
-			</action> </item>
-			<item label="VLC media player"> <action name="Execute">
-				<execute>vlc</execute>
-			</action> </item>
-		</menu>
-		<menu id="3" label="Office">
-			<item label="AbiWord"> <action name="Execute">
-				<execute>abiword-2.8</execute>
-			</action> </item>
-			<item label="BibleTime"> <action name="Execute">
-				<execute>bibletime</execute>
-			</action> </item>
-			<item label="Dictionary"> <action name="Execute">
-				<execute>gnome-dictionary</execute>
-			</action> </item>
-			<item label="Gnumeric"> <action name="Execute">
-				<execute>gnumeric</execute>
-			</action> </item>
-			<item label="KMyMoney"> <action name="Execute">
-				<execute>kmymoney</execute>
-			</action> </item>
-			<item label="KWord"> <action name="Execute">
-				<execute>kword</execute>
-			</action> </item>
-			<item label="Okular"> <action name="Execute">
-				<execute>okular</execute>
-			</action> </item>
-			<item label="OpenOffice.org 3.3 Impress"> <action name="Execute">
-				<execute>ooffice</execute>
-			</action> </item>
-			<item label="OpenOffice.org 3.3 Printer Administration"> <action name="Execute">
-				<execute>ooffice-printeradmin</execute>
-			</action> </item>
-			<item label="Openoffice.org Calc"> <action name="Execute">
-				<execute>oocalc</execute>
-			</action> </item>
-			<item label="Openoffice.org Impress"> <action name="Execute">
-				<execute>ooimpress</execute>
-			</action> </item>
-			<item label="Openoffice.org Math"> <action name="Execute">
-				<execute>oomath</execute>
-			</action> </item>
-		</menu>
-		<separator/>
-		<menu id="40" label="OpenBox | Config">
-			<menu id="client-list-menu"/>
-                <menu id="37" label="System">
-                <menu id="36" label="Settings">
-                    <menu id="21" label="GNOME">
-                        <item label="Appearance"> <action name="Execute">
-                            <execute>gnome-appearance-properties</execute>
-                        </action> </item>
-                        <item label="Assistive Technologies"> <action name="Execute">
-                            <execute>gnome-at-properties</execute>
-                        </action> </item>
-                        <item label="Bluetooth"> <action name="Execute">
-                            <execute>bluetooth-properties</execute>
-                        </action> </item>
-                        <item label="File Management"> <action name="Execute">
-                            <execute>nautilus-file-management-properties</execute>
-                        </action> </item>
-                        <item label="Keyboard"> <action name="Execute">
-                            <execute>gnome-keyboard-properties</execute>
-                        </action> </item>
-                        <item label="Keyboard Shortcuts"> <action name="Execute">
-                            <execute>gnome-keybinding-properties</execute>
-                        </action> </item>
-                        <item label="Lockdown Editor"> <action name="Execute">
-                            <execute>pessulus</execute>
-                        </action> </item>
-                        <item label="Main Menu"> <action name="Execute">
-                            <execute>alacarte</execute>
-                        </action> </item>
-                        <item label="Monitors"> <action name="Execute">
-                            <execute>gnome-display-properties</execute>
-                        </action> </item>
-                        <item label="Mouse"> <action name="Execute">
-                            <execute>gnome-mouse-properties</execute>
-                        </action> </item>
-                        <item label="Network Proxy"> <action name="Execute">
-                            <execute>gnome-network-properties</execute>
-                        </action> </item>
-                        <item label="Preferred Applications"> <action name="Execute">
-                            <execute>gnome-default-applications-properties</execute>
-                        </action> </item>
-                        <item label="Printing"> <action name="Execute">
-                            <execute>gnome-cups-manager</execute>
-                        </action> </item>
-                        <item label="Privilege granting"> <action name="Execute">
-                            <execute>gksu-properties</execute>
-                        </action> </item>
-                        <item label="Remote Desktop"> <action name="Execute">
-                            <execute>vino-preferences</execute>
-                        </action> </item>
-                        <item label="Screensaver"> <action name="Execute">
-                            <execute>gnome-screensaver-preferences</execute>
-                        </action> </item>
-                        <item label="Sound"> <action name="Execute">
-                            <execute>gnome-volume-control</execute>
-                        </action> </item>
-                        <item label="Startup Applications"> <action name="Execute">
-                            <execute>gnome-session-properties</execute>
-                        </action> </item>
-                        <item label="User Profile Editor"> <action name="Execute">
-                            <execute>sabayon</execute>
-                        </action> </item>
-                        <item label="Windows"> <action name="Execute">
-                            <execute>gnome-window-properties</execute>
-                        </action> </item>
-                    </menu>
-                    <menu id="35" label="Xfce">
-                        <item label="Accessibility"> <action name="Execute">
-                            <execute>xfce4-accessibility-settings</execute>
-                        </action> </item>
-                        <item label="Appearance"> <action name="Execute">
-                            <execute>xfce4-appearance-settings</execute>
-                        </action> </item>
-                        <item label="Desktop"> <action name="Execute">
-                            <execute>xfdesktop-settings</execute>
-                        </action> </item>
-                        <item label="Display"> <action name="Execute">
-                            <execute>xfce4-display-settings</execute>
-                        </action> </item>
-                        <item label="File Manager"> <action name="Execute">
-                            <execute>thunar-settings</execute>
-                        </action> </item>
-                        <item label="Keyboard"> <action name="Execute">
-                            <execute>xfce4-keyboard-settings</execute>
-                        </action> </item>
-                        <item label="Mouse"> <action name="Execute">
-                            <execute>xfce4-mouse-settings</execute>
-                        </action> </item>
-                        <item label="Panel"> <action name="Execute">
-                            <execute>xfce4-panel -p</execute>
-                        </action> </item>
-                        <item label="Preferred Applications"> <action name="Execute">
-                            <execute>exo-preferred-applications</execute>
-                        </action> </item>
-                        <item label="Removable Drives and Media"> <action name="Execute">
-                            <execute>thunar-volman-settings</execute>
-                        </action> </item>
-                        <item label="Screensaver"> <action name="Execute">
-                            <execute>xscreensaver-demo</execute>
-                        </action> </item>
-                        <item label="Session and Startup"> <action name="Execute">
-                            <execute>xfce4-session-settings</execute>
-                        </action> </item>
-                        <item label="Settings Editor"> <action name="Execute">
-                            <execute>xfce4-settings-editor</execute>
-                        </action> </item>
-                        <item label="Settings Manager"> <action name="Execute">
-                            <execute>xfce4-settings-manager</execute>
-                        </action> </item>
-                        <item label="Window Manager"> <action name="Execute">
-                            <execute>xfwm4-settings</execute>
-                        </action> </item>
-                        <item label="Window Manager Tweaks"> <action name="Execute">
-                            <execute>xfwm4-tweaks-settings</execute>
-                        </action> </item>
-                        <item label="Workspaces"> <action name="Execute">
-                            <execute>xfwm4-workspace-settings</execute>
-                        </action> </item>
-                    </menu>
-                    <item label="Customize Look and Feel"> <action name="Execute">
-                        <execute>lxappearance</execute>
-                    </action> </item>
-                    <item label="Floating Feet"> <action name="Execute">
-                        <execute>/usr/libexec/gnome-screensaver/floaters /usr/share/pixmaps/gnome-logo-white.svg</execute>
-                    </action> </item>
-                    <item label="Floating Gentoo Logo"> <action name="Execute">
-                        <execute>/usr/libexec/gnome-screensaver/floaters /usr/share/pixmaps/gentoo-logo.svg</execute>
-                    </action> </item>
-                    <item label="Java Control Panel for Sun JDK 1.6"> <action name="Execute">
-                        <execute>/opt/sun-jdk-1.6.0.24/jre/bin/ControlPanel</execute>
-                    </action> </item>
-                    <item label="Manage Printing"> <action name="Execute">
-                        <execute>xdg-open http://localhost:631/</execute>
-                    </action> </item>
-                    <item label="NVIDIA X Server Settings"> <action name="Execute">
-                        <execute>nvidia-settings</execute>
-                    </action> </item>
-                    <item label="Openbox Configuration Manager"> <action name="Execute">
-                        <execute>obconf</execute>
-                    </action> </item>
-                    <item label="Pictures folder"> <action name="Execute">
-                        <execute>/usr/libexec/gnome-screensaver/slideshow</execute>
-                    </action> </item>
-                    <item label="Pop art squares"> <action name="Execute">
-                        <execute>/usr/libexec/gnome-screensaver/popsquares</execute>
-                    </action> </item>
-                    <item label="Power Management"> <action name="Execute">
-                        <execute>gnome-power-preferences</execute>
-                    </action> </item>
-                    <item label="System Settings"> <action name="Execute">
-                        <execute>systemsettings</execute>
-                    </action> </item>
-                </menu>
-                <item label="Avahi Zeroconf Browser"> <action name="Execute">
-                    <execute>avahi-discover</execute>
-                </action> </item>
-                <item label="Bulk Rename"> <action name="Execute">
-                    <execute>/usr/lib64/Thunar/ThunarBulkRename</execute>
-                </action> </item>
-                <item label="CD/DVD Creator"> <action name="Execute">
-                    <execute>nautilus --no-default-window --no-desktop burn:///</execute>
-                </action> </item>
-                <item label="chronyc"> <action name="Execute">
-                    <execute>xterm -e chronyc</execute>
-                </action> </item>
-                <item label="Configuration Editor"> <action name="Execute">
-                    <execute>gconf-editor</execute>
-                </action> </item>
-                <item label="Disk Usage Analyzer"> <action name="Execute">
-                    <execute>baobab</execute>
-                </action> </item>
-                <item label="Disk Utility"> <action name="Execute">
-                    <execute>palimpsest</execute>
-                </action> </item>
-                <item label="File Browser"> <action name="Execute">
-                    <execute>nautilus --no-desktop</execute>
-                </action> </item>
-                <item label="GDM flexiserver"> <action name="Execute">
-                    <execute>gdmflexiserver</execute>
-                </action> </item>
-                <item label="GDM flexiserver in Xnest"> <action name="Execute">
-                    <execute>gdmflexiserver -n</execute>
-                </action> </item>
-                <item label="GDM Photo Setup"> <action name="Execute">
-                    <execute>gdmphotosetup</execute>
-                </action> </item>
-                <item label="GDM Setup"> <action name="Execute">
-                    <execute>gksu gdmsetup</execute>
-                </action> </item>
-                <item label="GNOME Bug Report Tool"> <action name="Execute">
-                    <execute>bug-buddy</execute>
-                </action> </item>
-                <item label="KDiskFree"> <action name="Execute">
-                    <execute>kdf</execute>
-                </action> </item>
-                <item label="KInfoCenter"> <action name="Execute">
-                    <execute>kinfocenter</execute>
-                </action> </item>
-                <item label="KRandRTray"> <action name="Execute">
-                    <execute>krandrtray</execute>
-                </action> </item>
-                <item label="KSystemLog"> <action name="Execute">
-                    <execute>ksystemlog</execute>
-                </action> </item>
-                <item label="KUser"> <action name="Execute">
-                    <execute>kuser</execute>
-                </action> </item>
-                <item label="KWalletManager"> <action name="Execute">
-                    <execute>kwalletmanager</execute>
-                </action> </item>
-                <item label="KwikDisk"> <action name="Execute">
-                    <execute>kwikdisk</execute>
-                </action> </item>
-                <item label="Log File Viewer"> <action name="Execute">
-                    <execute>gnome-system-log</execute>
-                </action> </item>
-                <item label="Log Out"> <action name="Execute">
-                    <execute>xfce4-session-logout</execute>
-                </action> </item>
-                <item label="Nautilus"> <action name="Execute">
-                    <execute>nautilus</execute>
-                </action> </item>
-                <item label="Network Tools"> <action name="Execute">
-                    <execute>gnome-nettool</execute>
-                </action> </item>
-                <item label="Passwords and Encryption Keys"> <action name="Execute">
-                    <execute>seahorse</execute>
-                </action> </item>
-                <item label="Print Notification Icon"> <action name="Execute">
-                    <execute>gnome-cups-icon</execute>
-                </action> </item>
-                <item label="pstree"> <action name="Execute">
-                    <execute>xterm -e pstree</execute>
-                </action> </item>
-                <item label="System Monitor"> <action name="Execute">
-                    <execute>gnome-system-monitor</execute>
-                </action> </item>
-                <item label="System Monitor"> <action name="Execute">
-                    <execute>ksysguard</execute>
-                </action> </item>
-                <item label="Top"> <action name="Execute">
-                    <execute>xterm -e top</execute>
-                </action> </item>
-                <item label="Wireshark"> <action name="Execute">
-                    <execute>wireshark</execute>
-                </action> </item>
-            </menu>
-            <menu id="38" label="Utilities">
-                <item label="About Xfce"> <action name="Execute">
-                    <execute>xfce4-about</execute>
-                </action> </item>
-                <item label="Activate ScreenSaver (Next)"> <action name="Execute">
-                    <execute>xscreensaver-command -next</execute>
-                </action> </item>
-                <item label="Activate ScreenSaver (Previous)"> <action name="Execute">
-                    <execute>xscreensaver-command -prev</execute>
-                </action> </item>
-                <item label="Activate ScreenSaver (Random)"> <action name="Execute">
-                    <execute>xscreensaver-command -activate</execute>
-                </action> </item>
-                <item label="Archive Manager"> <action name="Execute">
-                    <execute>file-roller</execute>
-                </action> </item>
-                <item label="Ark"> <action name="Execute">
-                    <execute>ark</execute>
-                </action> </item>
-                <item label="Calculator"> <action name="Execute">
-                    <execute>gcalctool</execute>
-                </action> </item>
-                <item label="Character Map"> <action name="Execute">
-                    <execute>gucharmap</execute>
-                </action> </item>
-                <item label="Clipman"> <action name="Execute">
-                    <execute>xfce4-clipman</execute>
-                </action> </item>
-                <item label="Demo Screen Hacks"> <action name="Execute">
-                    <execute>xscreensaver-command -demo</execute>
-                </action> </item>
-                <item label="Disable XScreenSaver"> <action name="Execute">
-                    <execute>xscreensaver-command -exit</execute>
-                </action> </item>
-                <item label="Enable XScreenSaver"> <action name="Execute">
-                    <execute>xscreensaver</execute>
-                </action> </item>
-                <item label="File Manager"> <action name="Execute">
-                    <execute>exo-open --launch FileManager</execute>
-                </action> </item>
-                <item label="Filelight"> <action name="Execute">
-                    <execute>filelight</execute>
-                </action> </item>
-                <item label="HP Device Manager"> <action name="Execute">
-                    <execute>hp-toolbox</execute>
-                </action> </item>
-                <item label="Info"> <action name="Execute">
-                    <execute>xterm -e info</execute>
-                </action> </item>
-                <item label="KCalc"> <action name="Execute">
-                    <execute>kcalc</execute>
-                </action> </item>
-                <item label="KCharSelect"> <action name="Execute">
-                    <execute>kcharselect</execute>
-                </action> </item>
-                <item label="KGpg"> <action name="Execute">
-                    <execute>kgpg</execute>
-                </action> </item>
-                <item label="Klipper"> <action name="Execute">
-                    <execute>klipper</execute>
-                </action> </item>
-                <item label="KTeaTime"> <action name="Execute">
-                    <execute>kteatime</execute>
-                </action> </item>
-                <item label="KTimer"> <action name="Execute">
-                    <execute>ktimer</execute>
-                </action> </item>
-                <item label="Reinitialize XScreenSaver"> <action name="Execute">
-                    <execute>xscreensaver-command -restart</execute>
-                </action> </item>
-                <item label="Run Program..."> <action name="Execute">
-                    <execute>xfrun4</execute>
-                </action> </item>
-                <item label="ScreenSaver Preferences"> <action name="Execute">
-                    <execute>xscreensaver-command -prefs</execute>
-                </action> </item>
-                <item label="Search for Files..."> <action name="Execute">
-                    <execute>gnome-search-tool</execute>
-                </action> </item>
-                <item label="SuperKaramba"> <action name="Execute">
-                    <execute>superkaramba</execute>
-                </action> </item>
-                <item label="Sweeper"> <action name="Execute">
-                    <execute>sweeper</execute>
-                </action> </item>
-                <item label="Take Screenshot"> <action name="Execute">
-                    <execute>gnome-screenshot --interactive</execute>
-                </action> </item>
-                <item label="Terminal Emulator"> <action name="Execute">
-                    <execute>exo-open --launch TerminalEmulator</execute>
-                </action> </item>
-                <item label="Time Tracker"> <action name="Execute">
-                    <execute>hamster-time-tracker</execute>
-                </action> </item>
-                <item label="Xkill"> <action name="Execute">
-                    <execute>xkill</execute>
-                </action> </item>
-                <item label="Xsetroot"> <action name="Execute">
-                    <execute>xsetroot</execute>
-                </action> </item>
-            </menu>
-            <item label="Desktop"> <action name="Execute"> <execute> /usr/bin/nitrogen </execute> </action> </item>
-            <item label="Taskbar"> <action name="Execute"> <execute> /usr/bin/tintwizard </execute> </action> </item>
-			<item label="Reconfigure"> <action name="Reconfigure"/> </item>
-		</menu>
+	    <item label="mumble"> <action name="Execute"> <execute> /usr/bin/mumble </execute> </action> </item>
+    </menu>
+    <menu id="6" label="Graphics">
+        <item label="Darktable Photo Workflow Software"> <action name="Execute"><execute>darktable</execute></action> </item>
+        <item label="digiKam"> <action name="Execute"><execute>digikam</execute></action> </item>
+        <item label="Document Viewer"> <action name="Execute"><execute>evince</execute></action> </item>
+        <item label="Hugin Batch Processor"> <action name="Execute"><execute>PTBatcherGUI</execute></action> </item>
+        <item label="Hugin Panorama Creator"> <action name="Execute"><execute>hugin</execute></action> </item>
+        <item label="Geeqie"> <action name="Execute"><execute>geeqie</execute></action> </item>
+        <item label="GNU Image Manipulation Program"> <action name="Execute"><execute>gimp-2.6</execute></action> </item>
+        <item label="Image Viewer"> <action name="Execute"><execute>eog</execute></action> </item>
+        <item label="Inkscape"> <action name="Execute"><execute>inkscape</execute></action> </item>
+        <item label="Panorama"> <action name="Execute"><execute>panoramagui</execute></action> </item>
+        <item label="UFRaw"> <action name="Execute"><execute>ufraw</execute></action> </item>
+    </menu>
+    <separator/>
+    <menu id="40" label="OpenBox | Config">
+        <menu id="client-list-menu"/>
+        <item label="GTK Theme"> <action name="Execute"> <execute> /usr/bin/lxappearance </execute> </action> </item>
+        <item label="Background"> <action name="Execute"> <execute> /usr/bin/nitrogen </execute> </action> </item>
+        <item label="Taskbar"> <action name="Execute"> <execute> /usr/bin/tintwizard </execute> </action> </item>
+        <item label="Edit Menu"> <action name="Execute"> <execute> /usr/bin/jedit ~/.config/openbox/menu.xml </execute> </action> </item>
+        <item label="Obconf"> <action name="Execute"> <execute> /usr/bin/obconf </execute> </action> </item>
+        <item label="Reload Config"> <action name="Reconfigure"/> </item>
+    </menu>
     <separator/>
     <item label="Exit"> <action name="Exit"/> </item>
 	</menu>

@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Clearlooks-3.4</name>
-    <titleLayout>NLIMC</titleLayout>
+    <name>Onyx-Green</name>
+    <titleLayout>NSDLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -179,6 +179,22 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
+        <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+    <execute>~/bin/vol+</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+    <execute>~/bin/vol-</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+    <execute>~/bin/vol-mute</execute>
+      </action>
+    </keybind>
+    
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>

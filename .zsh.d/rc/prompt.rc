@@ -4,7 +4,7 @@ colors
 
 # define your colors here (i hate white background)
 host_color="green" 
-path_color="blue"
+path_color="red"
 date_color="white"
 
 host="%{$fg[$host_color]%}%n@%m"
